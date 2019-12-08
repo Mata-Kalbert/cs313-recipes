@@ -7,10 +7,13 @@
     <title>Results</title>
 </head>
 <body>
-    <h1>Mac and Cheese</h1>
+    <h1>Arepas</h1>
     <% data.forEach(function(item, index){ %>
         <ul>
             <li><%= item.ingredient_name %></li>
+        </ul>
+        <ul>
+            <li><%= item.direction_text %></li>
         </ul>
         <% }); %>
 </body>

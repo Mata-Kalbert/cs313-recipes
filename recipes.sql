@@ -38,3 +38,14 @@ INSERT INTO recipe_directions VALUES(DEFAULT, 1, 'mix all the ingredients to for
 INSERT INTO recipe_directions VALUES(DEFAULT, 2, 'with a spoon take a piece to form a round ball', 1);
 INSERT INTO recipe_directions VALUES(DEFAULT, 3, 'flatten the ball and place it into a cast iron', 1);
 
+CREATE TABLE shopping_list (
+    item_id SERIAL PRIMARY KEY NOT NULL,
+    item_qty INT,
+    item_name VARCHAR(45) NOT NULL
+);
+INSERT INTO shopping_list VALUES (DEFAULT, 1, 'Milk');
+INSERT INTO shopping_list VALUES (DEFAULT, 2, 'Bread');
+INSERT INTO shopping_list VALUES (DEFAULT, 1, 'Cheese');
+INSERT INTO shopping_list VALUES (DEFAULT, 6, 'Apples');
+
+SELECT item_qty, item_name FROM shopping_list;
