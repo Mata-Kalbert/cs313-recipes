@@ -29,14 +29,14 @@ INSERT INTO ingredients VALUES(DEFAULT, 'Harina PAN');
 INSERT INTO ingredients VALUES(DEFAULT, 'Salt');
 INSERT INTO ingredients VALUES(DEFAULT, 'Oil');
 
-INSERT INTO recipe_ingredients VALUES(DEFAULT, '2 cups', 1, 1);
-INSERT INTO recipe_ingredients VALUES(DEFAULT, '1 cups', 1, 2);
-INSERT INTO recipe_ingredients VALUES(DEFAULT, '1 teaspoon', 1, 3);
-INSERT INTO recipe_ingredients VALUES(DEFAULT, '1 teaspoon', 1, 4);
+INSERT INTO recipe_ingredients VALUES(DEFAULT, '2 cups', 3, 13);
+INSERT INTO recipe_ingredients VALUES(DEFAULT, '1 cups', 3, 14);
+INSERT INTO recipe_ingredients VALUES(DEFAULT, '1 teaspoon', 3, 15);
+INSERT INTO recipe_ingredients VALUES(DEFAULT, '1 teaspoon', 3, 16);
 
-INSERT INTO recipe_directions VALUES(DEFAULT, 1, 'mix all the ingredients to form a dough', 1);
-INSERT INTO recipe_directions VALUES(DEFAULT, 2, 'with a spoon take a piece to form a round ball', 1);
-INSERT INTO recipe_directions VALUES(DEFAULT, 3, 'flatten the ball and place it into a cast iron', 1);
+INSERT INTO recipe_directions VALUES(DEFAULT, 1, 'mix all the ingredients to form a dough', 3);
+INSERT INTO recipe_directions VALUES(DEFAULT, 2, 'with a spoon take a piece to form a round ball', 3);
+INSERT INTO recipe_directions VALUES(DEFAULT, 3, 'flatten the ball and place it into a cast iron', 3);
 
 CREATE TABLE shopping_list (
     item_id SERIAL PRIMARY KEY NOT NULL,
@@ -62,17 +62,17 @@ INSERT INTO ingredients VALUES (DEFAULT, 'Tomato Sauce');
 INSERT INTO ingredients VALUES (DEFAULT, 'Meatballs');
 INSERT INTO ingredients VALUES (DEFAULT, 'Parmesan Cheese');
 INSERT INTO ingredients VALUES (DEFAULT, 'Spaghetti');
-INSERT INTO recipe_ingredients VALUES (DEFAULT, '1lb', 1, 1);
-INSERT INTO recipe_ingredients VALUES (DEFAULT, '1cup', 1, 2);
-INSERT INTO recipe_ingredients VALUES (DEFAULT, '1/2cup', 1, 3);
-INSERT INTO recipe_ingredients VALUES (DEFAULT, '2cups', 1, 4);
+INSERT INTO recipe_ingredients VALUES (DEFAULT, '1lb', 4, 17);
+INSERT INTO recipe_ingredients VALUES (DEFAULT, '1cup', 4, 18);
+INSERT INTO recipe_ingredients VALUES (DEFAULT, '1/2cup', 4, 19);
+INSERT INTO recipe_ingredients VALUES (DEFAULT, '2cups', 4, 20);
 INSERT INTO recipe_ingredients VALUES (DEFAULT, '2cups', 2, 5);
 INSERT INTO recipe_ingredients VALUES (DEFAULT, '1/2lbs', 2, 6);
 INSERT INTO recipe_ingredients VALUES (DEFAULT, '1cup', 2, 7);
 INSERT INTO recipe_ingredients VALUES (DEFAULT, '1lbs', 2, 8);
-INSERT INTO recipe_directions VALUES (DEFAULT, 1, 'Cook Pasta', 1);
-INSERT INTO recipe_directions VALUES (DEFAULT, 2, 'Add butter, milk and cheese', 1);
-INSERT INTO recipe_directions VALUES (DEFAULT, 3, 'Mix ingredients', 1);
+INSERT INTO recipe_directions VALUES (DEFAULT, 1, 'Cook Pasta', 4);
+INSERT INTO recipe_directions VALUES (DEFAULT, 2, 'Add butter, milk and cheese', 4);
+INSERT INTO recipe_directions VALUES (DEFAULT, 3, 'Mix ingredients', 4);
 INSERT INTO recipe_directions VALUES (DEFAULT, 1, 'Cook pasta and meatballs separately', 2);
 INSERT INTO recipe_directions VALUES (DEFAULT, 2, 'Mix with tomato sauce', 2);
 INSERT INTO recipe_directions VALUES (DEFAULT, 3, 'Add parmesan cheese', 2);
