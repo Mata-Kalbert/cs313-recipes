@@ -20,8 +20,7 @@ p, label, li {
 }
 h1 {
     width: 40%;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    margin: 0 auto;
     font-size: 4rem;
     background-color: rgb(211, 238, 194);
     opacity: 0.6;
@@ -66,7 +65,7 @@ button:hover {
     box-shadow: 0 2px 2px 2px rgb(87, 87, 81);
   }
   .section:hover{
-      opacity: 0.9;
+      opacity: 0.8;
   }
 /* Results */
 ul,li { list-style-type: none;
