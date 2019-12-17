@@ -19,6 +19,7 @@ p, label, li {
     font-size: 1.2rem;
 }
 h1 {
+    width: 40%;
     margin-top: 6%;
     margin-bottom: 6%;
     font-size: 4rem;
@@ -63,8 +64,10 @@ button:hover {
     opacity: 0.6;
     border-radius: 2px;
     box-shadow: 0 2px 2px 2px rgb(87, 87, 81);
-  
-}
+  }
+  .section:hover{
+      opacity: 0.9;
+  }
 /* Results */
 ul,li { list-style-type: none;
     list-style-position:inside;
