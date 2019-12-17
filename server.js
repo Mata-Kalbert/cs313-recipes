@@ -1,10 +1,16 @@
 var express = require("express");
 var app = express();
 
+var bodyParser = require('body-parser')
+app.use(bodyParser.json());       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
+
 const { Pool } = require("pg");
 
 const connectionString = process.env.DATABASE_URL || "postgress://kalbertmata:16163668@localhost:5432/recipesdb"
-const pool = new Pool({connectionString: connectionString});
+const pool = new Pool({connectionString: connectionString, multipleStatements:true});
 
 app.set("port", (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
@@ -51,8 +57,10 @@ function getRecipeFromDB(id, callback) {
 }
 // Insert Into Shopping List
 function insertItem(request, response) {
-    const qty = request.query.qty;
-    const item = request.query.item;
+    console.log(request.body.qty);
+    console.log(request.body.item);
+    var qty = request.body.qty;
+    var item = request.body.item;
     insertItemDB(qty, item, function(error, result) {
         if (error || result == null /*|| result.length != 1*/) {
             response.status(500).json({success: false, data: error});
