@@ -2,6 +2,7 @@
 /* Layout */
 body {
     background-image:url('../arepas.jpg');
+    background-size: 100%;
     width: 90%;
     height: 200vh;
     margin: 0 auto;
@@ -21,6 +22,8 @@ h1 {
     margin-top: 6%;
     margin-bottom: 6%;
     font-size: 4rem;
+    background-color: rgb(211, 238, 194);
+    background-color: transparent;
     padding: 3%;
     border-radius: 2px;
     box-shadow: 0 2px 2px 2px rgb(143, 145, 145);
@@ -58,6 +61,7 @@ button:hover {
     background-color: rgb(206, 221, 118);
     border-radius: 2px;
     box-shadow: 0 2px 2px 2px rgb(87, 87, 81);
+    background-color: transparent;
 }
 /* Results */
 ul,li { list-style-type: none;
