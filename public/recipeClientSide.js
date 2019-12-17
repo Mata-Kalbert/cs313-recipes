@@ -6,7 +6,7 @@ function searchRecipe() {
         console.log("Back from the server with:");
         console.log(data);
 
-        if( id == 'Arepas' ) {
+        if( id == 'Arepas' || 'Mac n Cheese' ) {
             document.body.className = 'arepa';
           }
 
