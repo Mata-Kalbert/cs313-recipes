@@ -75,3 +75,6 @@ ul,li { list-style-type: none;
 ul {
     padding-bottom: 2%;
 }
+body.arepa{
+    background-image: url(../dinner.jpg);
+}

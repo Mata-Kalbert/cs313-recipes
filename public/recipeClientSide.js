@@ -5,6 +5,11 @@ function searchRecipe() {
     $.get('/getRecipes', {id:id}, function(data) {
         console.log("Back from the server with:");
         console.log(data);
+
+        if( data.indexOf('Arepas') > 0 ) {
+            document.body.className = 'arepa';
+          }
+
         $("#h2recipetitle").append("Your Recipe");
         if (data.length == 0) {
             $("#errorrecipe").append("Arepas");
