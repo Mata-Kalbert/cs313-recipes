@@ -6,7 +6,7 @@ function searchRecipe() {
         console.log("Back from the server with:");
         console.log(data);
 
-        if( data.indexOf('Arepas') > 0 ) {
+        if( data == 'Arepas' ) {
             document.body.className = 'arepa';
           }
 
